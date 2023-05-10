@@ -10,3 +10,11 @@ resource "aws_s3_bucket" "example" {
     Name = "spacelift-bckt"
   }
 }
+
+resource "aws_iam_user" "example" {
+  name = "example-user"
+}
+
+resource "aws_iam_access_key" "example" {
+  user = aws_iam_user.example.name
+}
