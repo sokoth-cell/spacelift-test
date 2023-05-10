@@ -11,10 +11,10 @@ resource "aws_s3_bucket" "example" {
   }
 }
 
-resource "aws_iam_user" "example" {
-  name = "example-user"
-}
+# resource "aws_iam_user" "example" {
+#   name = "example-user"
+# }
 
-resource "aws_iam_access_key" "example" {
-  user = aws_iam_user.example.name
-}
+# resource "aws_iam_access_key" "example" {
+#   user = aws_iam_user.example.name
+# }
